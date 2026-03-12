@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>MrCoolCola</title>
+        <script>
+            const title = document.title.split("")
+            let t2 = title.slice()
+            let i = -1
+            let char = "࿘"
+            setInterval(() => {
+                i++
+                if (i == title.length) {
+                    //t2 = title.slice()
+                    i = 0
+                    if (char == "࿘") {
+                        char = "n"
+                    } else {
+                        char = "࿘"
+                    }
+                }
+                let c2;
+                if (char == "࿘") {
+                    c2 = char
+                } else {
+                    c2 = title[i]
+                }
+                t2[i] = c2
+                document.title = t2.join("")
+            }, 150)
+    	</script>
+    </head>
+    <body>
+        <h1>MrCoolCola`s homepage</h1>
+        Welcome to my webpage!
+	<br>
+	<br>
+        <div class="ilike">
+            <h2> 󱃪 Things i like: </h2>
+            <b>Rust</b>. IMHO it`s a very good language. I have my own Telegram bot written on rust, and it runs very fast unlike its python version
+            <br><br>
+            <b>#1E90FF</b> accent color. I`m using it in almost everything i made
+            <br><br>
+            <b>NixOS</b> and nix package manager allow me to do everything i want with my system. I even can destroy my system partition and rebuild it like it never happened from configs stored on my github
+            <br><br>
+            <b>Selfhosting</b>. Site you`re seeing is currently running on poor PackardBell laptop from 2013. It runs on Arch Linux with Caddy webserver.
+            Also you can join my MC 1.12.2 server on mrcoolcola.ddns.net:25565! It runs almost 24/7
+            <br><br>
+            <b>IndieWeb</b> is very cool variant of internet future
+        </div>
+        <div class="contacts">
+            <h2>  Contacts</h2>
+            <a href="https://t.me/urancontrol_bot"><img src="/assets/telegram.gif"></a>
+        </div>
+        <div class="about">
+            <h2>  About me</h2>
+            I live in russia. Using linux from about 11-12 y.o and i very love it. Also im learning english and i think i already made a good progress
+        </div>
+        <div class="cool_links">
+            <h2> Cool websites</h2>
+            <ul>
+                <li><a href="http://74yscktgreshsh23eadyimzglq56cepsjz4ptmj3lyga7vd36waa.b32.i2p">NotAUser</a></li>
+                <li><a href="http://[200:94a:34e5:266b:f05d:73c:9e98:6c17]/">4X Pro</a></li>
+            </ul>
+        </div>
+
+        <!-- <div class="image" style="right:0;transform:scaleX(-1)"><img src="/assets/his00.gif"></div> -->
+
+        <div class="available_on">
+            <h2>This site is available on:</h2> <a href="http://cola4jlpmnvj5zpqx72lqvbgbvxj6berwkdqiivfwbcxqy4xq5xewrad.onion"><img src="/assets/tor.gif" alt="onion"></a> <a href="http://[205:cee4:b872:1881:adc1:b984:8402:a9f4]/"><img src="/assets/yggdrasil.png" alt="yggdrasil"></a> <a href="http://mrcoolcola.ddns.net:8080/"><img src="/assets/clearnet.png" alt="clearnet"></a> 
+        </div>
+        
+        <footer>
+            <a href="https://archlinux.org"><img src="/assets/arch.png"></a>
+            <img xmlns="http://www.w3.org/1999/xhtml" src="/assets/linux.gif" alt="Linux" />
+            <img xmlns="http://www.w3.org/1999/xhtml" src="/assets/microsoft_stop.gif" alt="Demicroslop" />
+            <a href="https://caddyserver.com/"><img src="/assets/caddy.webp"></a>
+            <img xmlns="http://www.w3.org/1999/xhtml" src="/assets/anythingbut.gif" alt="Degoogle" />
+            <a href="/jellyfin/"><img src="/assets/jellyfin.gif"></a>
+            <a href="/freshrss/"><img src="/assets/rss-button.gif"></a>
+            <a href="https://www.firefox.com"><img src="/assets/firefox.gif"></a>
+            <a href="https://www.teamspeak.com"><img src="/assets/teamspeak.png"></a>
+            <a href=""><img src="/assets/make_a_site.jpg"></a>
+            <a href=""><img src="/assets/bestvieweddesktop.gif" /></a>
+            <a href="/files/"><img src="/assets/filetrans.gif" /></a>
+            <a href="http://headcrab.party"><img src="/assets/headcrab.gif"></a>
+            <!-- <a href="/libretranslate/">Libretranslate</a>
+            <a href="/searxng/">SearXNG</a> -->
+        </footer>
+
+    </body>
+</html>
