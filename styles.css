@@ -62,7 +62,7 @@ footer {
 .contacts {
   display: flex;
   align-items: center; /* выравнивание по вертикали (по центру) */
-  gap: 20px;           /* расстояние между элементами */
+  gap: 10px;           /* расстояние между элементами */
 }
 
 .available_on {
@@ -76,4 +76,28 @@ footer {
 .cool_links li a {
   color: #1E90FF;
   text-decoration: none;
+}
+.heading {
+    display: flex;           /* включает Flexbox */
+    align-items: center;     /* вертикальное выравнивание по центру */
+    gap: 15px;               /* отступ между аватаром и текстом */
+    font-size: 16px;         /* базовый размер шрифта (можно изменить) */
+}
+
+.avatar {
+    border-radius: 3px;      /* скругление углов */
+    width: 5em;            /* ширина, зависящая от размера шрифта */
+    height: 5em;           /* высота, равная ширине (квадрат) */
+    object-fit: cover;       /* чтобы изображение не искажалось */
+}
+
+.heading-text h1 {
+    margin: 0;               /* убираем лишние отступы */
+    font-size: 1.8rem;       /* пример размера заголовка */
+    line-height: 1.2;
+}
+
+.heading-text p {
+    margin: 5px 0 0;         /* небольшой отступ сверху */
+    font-size: 1rem;
 }

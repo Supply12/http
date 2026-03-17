@@ -3,24 +3,25 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <title>MrCoolCola</title>
+        <link rel="icon" type="image/jpeg" href="/assets/favicon.jpg">
         <script>
             const title = document.title.split("")
             let t2 = title.slice()
             let i = -1
-            let char = "࿘"
+            let char = "*"
             setInterval(() => {
                 i++
                 if (i == title.length) {
                     //t2 = title.slice()
                     i = 0
-                    if (char == "࿘") {
+                    if (char == "*") {
                         char = "n"
                     } else {
-                        char = "࿘"
+                        char = "*"
                     }
                 }
                 let c2;
-                if (char == "࿘") {
+                if (char == "*") {
                     c2 = char
                 } else {
                     c2 = title[i]
@@ -31,10 +32,15 @@
     	</script>
     </head>
     <body>
-        <h1>MrCoolCola`s homepage</h1>
-        Welcome to my webpage!
-	<br>
-	<br>
+        <div class="heading">
+            <!-- <img src="/assets/avatar.webp" alt="Avatar" class="avatar"> -->
+            <div class="heading-text">
+                <h1>MrCoolCola`s homepage</h1>
+                <p>Welcome to my webpage!</p>
+            </div>
+        </div>
+
+	    <br><br>
         <div class="ilike">
             <h2> 󱃪 Things i like: </h2>
             <b>Rust</b>. IMHO it`s a very good language. I have my own Telegram bot written on rust, and it runs very fast unlike its python version
@@ -50,7 +56,8 @@
         </div>
         <div class="contacts">
             <h2>  Contacts</h2>
-            <a href="https://t.me/urancontrol_bot"><img src="/assets/telegram.gif"></a>
+            <a href="https://t.me/urancontrol_bot"><img src="/assets/telegram.gif" alt="Telegram"></a>
+            <a href="https://mastodon.social/@mrCoolCola"><img src="/assets/mastodon.gif" alt="Mastodon"></a>
         </div>
         <div class="about">
             <h2>  About me</h2>
@@ -71,19 +78,19 @@
         </div>
         
         <footer>
-            <a href="https://archlinux.org"><img src="/assets/arch.png"></a>
-            <img xmlns="http://www.w3.org/1999/xhtml" src="/assets/linux.gif" alt="Linux" />
+            <a href="https://archlinux.org"><img src="/assets/arch.png" alt="Arch Linux"></a>
+            <img xmlns="http://www.w3.org/1999/xhtml" src="/assets/linux.gif" alt="GNU/Linux" />
             <img xmlns="http://www.w3.org/1999/xhtml" src="/assets/microsoft_stop.gif" alt="Demicroslop" />
-            <a href="https://caddyserver.com/"><img src="/assets/caddy.webp"></a>
+            <a href="https://caddyserver.com/"><img src="/assets/caddy.webp" alt="Caddy webserver"></a>
             <img xmlns="http://www.w3.org/1999/xhtml" src="/assets/anythingbut.gif" alt="Degoogle" />
-            <a href="/jellyfin/"><img src="/assets/jellyfin.gif"></a>
-            <a href="/freshrss/"><img src="/assets/rss-button.gif"></a>
-            <a href="https://www.firefox.com"><img src="/assets/firefox.gif"></a>
-            <a href="https://www.teamspeak.com"><img src="/assets/teamspeak.png"></a>
+            <a href="/jellyfin/"><img src="/assets/jellyfin.gif" alt="Jellyfin"></a>
+            <a href="/freshrss/"><img src="/assets/rss-button.gif" alt="FreshRSS"></a>
+            <a href="https://www.firefox.com"><img src="/assets/firefox.gif" alt="Firefox"></a>
+            <a href="https://www.teamspeak.com"><img src="/assets/teamspeak.png" alt="Teamspeak"></a>
             <a href=""><img src="/assets/make_a_site.jpg"></a>
             <a href=""><img src="/assets/bestvieweddesktop.gif" /></a>
-            <a href="/files/"><img src="/assets/filetrans.gif" /></a>
-            <a href="http://headcrab.party"><img src="/assets/headcrab.gif"></a>
+            <a href="/files/"><img src="/assets/filetrans.gif" alt="Files"/></a>
+            <a href="http://headcrab.party"><img src="/assets/headcrab.gif" alt="Headcrab"></a>
             <!-- <a href="/libretranslate/">Libretranslate</a>
             <a href="/searxng/">SearXNG</a> -->
         </footer>
