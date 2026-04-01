@@ -1,33 +1,6 @@
-@font-face {
-    font-family: 'MyFont';
-    src: url('assets/3270NerdFont-Regular.ttf') format('truetype');
-}
 body {
-  font-family: 'MyFont';
-  background: linear-gradient(-45deg, #0b2c4e, #031b34);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-  height: 100vh;
-  color: #e5e9f0;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 0px;
-  padding: 0px;
   overflow: hidden;
 }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .about,
 .contacts,
 .ilike,
