@@ -39,6 +39,8 @@
                 <label for="chipndale.nes">Chip n` dale</label><br>
                 <input type="radio" id="kirby.nes" name="game" value="Kirby">
                 <label for="kirby.nes">Kirby</label><br>
+                <input type="radio" id="fireboy.swf" name="game" value="Fireboy and Watergirl">
+                <label for="fireboy.swf">Fireboy and Watergirl</label><br>
             </div>
         </div>
         <script>
@@ -51,20 +53,25 @@
                         var selectedId = this.id; // например "fireboy.swf"
                         console.log('Выбрана radio кнопка с id:', selectedId);
                         var container = document.getElementById("nes");
-                        container.innerHTML = '';
-                        var browser = new jsnes.Browser({
-                            container: document.getElementById("nes"),
-                            onError: function (e) {
-                            console.error(e);
-                            },
-                        });
-                        jsnes.Browser.loadROMFromURL("assets/games/"+selectedId, function (err, data) {
-                            if (err) {
-                            console.error(err);
-                            return;
-                            }
-                            browser.loadROM(data);
-                        });
+                        if (selectedId.endsWith('.swf')) {
+                            container.innerHTML = '';
+                            container.innerHTML = '<embed height="480" src="assets/games/'+selectedId+'" type="application/x-shockwave-flash" width="620"></embed>';
+                        } else {
+                            container.innerHTML = '';
+                            var browser = new jsnes.Browser({
+                                container: document.getElementById("nes"),
+                                onError: function (e) {
+                                console.error(e);
+                                },
+                            });
+                            jsnes.Browser.loadROMFromURL("assets/games/"+selectedId, function (err, data) {
+                                if (err) {
+                                console.error(err);
+                                return;
+                                }
+                                browser.loadROM(data);
+                            });
+                        };
                     }
                 });
             });

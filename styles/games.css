@@ -8,7 +8,7 @@
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */  
     justify-content: center;
     align-items: center;
-    width: 512px;
+    width: 620px;
     height: 480px;
     /* From https://css.glass */
     background: #ffffff33;
