@@ -32,7 +32,7 @@ footer {
     image-rendering: pixelated;
 }
 
-.contacts {
+.contacts, .about_title {
   display: flex;
   align-items: center; /* выравнивание по вертикали (по центру) */
   gap: 10px;           /* расстояние между элементами */
