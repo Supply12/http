@@ -5,19 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/games.css">
     <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
 </head>
 <body>
     <div class="sidenav">
-        <a href="index.html"> Home</a>
-        <a href="rules.html"> Rules</a>
-        <a href="#">󰊖 Games</a>
-        <hr>
-        <p align="center">This site on:</p>
-        <a href="http://cola4jlpmnvj5zpqx72lqvbgbvxj6berwkdqiivfwbcxqy4xq5xewrad.onion"><img src="assets/tor.gif" alt="onion"></a>
-        <a href="http://[205:cee4:b872:1881:adc1:b984:8402:a9f4]/"><img src="assets/yggdrasil.png" alt="yggdrasil"></a>
-        <!-- <a href="http://mrcoolcola.ddns.net:8080/"><img src="assets/clearnet.png" alt="clearnet"></a> -->
+            <a href="index.html"> Home</a>
+            <a href="rules.html"> Rules</a>
+            <a href="#">󰊖 Games</a>
+            <hr>
+            <p align="center">This site on:</p>
+            <a href="http://cola4jlpmnvj5zpqx72lqvbgbvxj6berwkdqiivfwbcxqy4xq5xewrad.onion"><img src="assets/tor.gif" alt="onion"></a>
+            <a href="http://[205:cee4:b872:1881:adc1:b984:8402:a9f4]/"><img src="assets/yggdrasil.png" alt="yggdrasil"></a>
+            <!-- <a href="http://mrcoolcola.ddns.net:8080/"><img src="assets/clearnet.png" alt="clearnet"></a> -->
     </div>
-    <h1>* Later there will be flash and maybe jsnes games *</h1>
+    <div class="container">
+        <div id="nes" class="game">
+            <h1>Please select the game.</h1>
+        </div>
+        <script src="scripts/jsnes.js"></script>
+
+        <div class="containercontainer">
+            <div class="controls">
+                <table><thead><tr><th>Button</th><th>Player 1</th><th>Player 2</th></tr></thead><tbody><tr><td>Movement</td><td>Arrow keys</td><td>Numpad 8 / 2 / 4 / 6</td></tr><tr><td>A</td><td>X</td><td>Numpad 7</td></tr><tr><td>B</td><td>Z (or Y)</td><td>Numpad 9</td></tr><tr><td>Turbo A</td><td>S</td><td>—</td></tr><tr><td>Turbo B</td><td>A</td><td>—</td></tr><tr><td>Start</td><td>Enter</td><td>Numpad 1</td></tr><tr><td>Select</td><td>Right Ctrl</td><td>Numpad 3</td></tr></tbody></table>
+            </div>
+            <div class="selector">
+                <h3>Available games:</h3>
+                <input type="radio" id="mario.nes" name="game" value="Mario">
+                <label for="mario.nes">Mario</label><br>
+                <input type="radio" id="contra.nes" name="game" value="Contra">
+                <label for="contra.nes">Contra</label><br>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var radios = document.querySelectorAll('input[name="game"]');
+
+            radios.forEach(function(radio) {
+                radio.addEventListener('change', function() {
+                    if (this.checked) {
+                        var selectedId = this.id; // например "fireboy.swf"
+                        console.log('Выбрана radio кнопка с id:', selectedId);
+                        var container = document.getElementById("nes");
+                        container.innerHTML = '';
+                        var browser = new jsnes.Browser({
+                            container: document.getElementById("nes"),
+                            onError: function (e) {
+                            console.error(e);
+                            },
+                        });
+                        jsnes.Browser.loadROMFromURL("assets/games/"+selectedId, function (err, data) {
+                            if (err) {
+                            console.error(err);
+                            return;
+                            }
+                            browser.loadROM(data);
+                        });
+                    }
+                });
+            });
+        });
+        </script>
+    </div>
 </body>
 </html>

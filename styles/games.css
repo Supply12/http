@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+}
+.game {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */  
+    justify-content: center;
+    align-items: center;
+    width: 512px;
+    height: 480px;
+    /* From https://css.glass */
+    background: #ffffff33;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+.controls {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.selector {
+    margin-left: 15px;
+}
