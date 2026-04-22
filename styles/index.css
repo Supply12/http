@@ -1,11 +1,4 @@
-body {
-  /* overflow: hidden; */
-}
-.about,
-.contacts,
-.ilike,
-.cool_links,
-.projects {
+.box {
   border-style: dashed;
   border-color: #0a3865;
 }
