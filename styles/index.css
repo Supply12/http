@@ -10,6 +10,10 @@ body {
   border-color: #0a3865;
 }
 
+/* .container {
+  margin-left: 10px;
+} */
+
 footer {
   position: fixed;
   left: 0;
@@ -20,6 +24,10 @@ footer {
   background-color: #0a3865;
   color: white;
   text-align: center;
+}
+footer a img {
+  height: 31px;
+  width: 88px;
 }
 
 .image {
