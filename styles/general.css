@@ -13,6 +13,7 @@ body {
   margin-right: 10%;
   margin-bottom: 0px;
   padding: 0px;
+  cursor: url('../assets/cursor.ico'), auto;
 }
 
 .sidenav {
