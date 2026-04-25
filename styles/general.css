@@ -16,6 +16,14 @@ body {
   cursor: url('../assets/cursor.ico'), auto;
 }
 
+* {
+  image-rendering: pixelated;
+}
+
+.box {
+  border-style: dashed;
+  border-color: #0a3865;
+}
 .sidenav {
   width: 130px;
   position: fixed;
