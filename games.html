@@ -29,6 +29,11 @@
             <div class="controls">
                 <table><thead><tr><th>Button</th><th>Player 1</th><th>Player 2</th></tr></thead><tbody><tr><td>Movement</td><td>Arrow keys</td><td>Numpad 8 / 2 / 4 / 6</td></tr><tr><td>A</td><td>X</td><td>Numpad 7</td></tr><tr><td>B</td><td>Z (or Y)</td><td>Numpad 9</td></tr><tr><td>Turbo A</td><td>S</td><td>—</td></tr><tr><td>Turbo B</td><td>A</td><td>—</td></tr><tr><td>Start</td><td>Enter</td><td>Numpad 1</td></tr><tr><td>Select</td><td>Right Ctrl</td><td>Numpad 3</td></tr></tbody></table>
             </div>
+            <div class="advice box">
+                <p>NES games dont resize with the box automatically</p>
+                <p>You need to restart the game by switching to another and back.</p>
+                <p>Flash games dont have this issue.</p>
+            </div>
             <div class="selector box">
                 <h3>Available games:</h3>
                 <input type="radio" id="mario.nes" name="game" value="Mario">
@@ -55,7 +60,7 @@
                         var container = document.getElementById("nes");
                         if (selectedId.endsWith('.swf')) {
                             container.innerHTML = '';
-                            container.innerHTML = '<embed height="480" src="assets/games/'+selectedId+'" type="application/x-shockwave-flash" width="620"></embed>';
+                            container.innerHTML = '<embed height="100%" src="assets/games/'+selectedId+'" type="application/x-shockwave-flash" width="100%"></embed>';
                         } else {
                             container.innerHTML = '';
                             var browser = new jsnes.Browser({

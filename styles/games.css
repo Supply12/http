@@ -2,19 +2,20 @@
     display: flex;
 }
 .game {
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;         
     justify-content: center;
     align-items: center;
     width: 620px;
     height: 480px;
-    /* From https://css.glass */
     background: #ffffff33;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    resize: both;
+    overflow: auto;
 }
 
 table, th, td {
@@ -25,6 +26,8 @@ table, th, td {
 }
 .selector ,
 .controls ,
-.buttons {
+.buttons ,
+.advice {
     margin-left: 15px;
 }
+.advice p { margin:0 }
