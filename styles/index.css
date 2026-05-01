@@ -1,6 +1,11 @@
-/* .container {
-  margin-left: 10px;
-} */
+.container {
+  margin-bottom: 20vh;
+  height: fit-content;
+}
+
+body {
+  padding-bottom: 35px; /* высота футера + желаемое расстояние */
+}
 
 footer {
   position: fixed;
