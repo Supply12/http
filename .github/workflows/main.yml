@@ -1,0 +1,2 @@
+- name: Deploy to IPFS
+  uses: ipshipyard/ipfs-deploy-action@v1.10.0
