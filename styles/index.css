@@ -53,26 +53,60 @@ footer a img {
   text-decoration: none;
 }
 .heading {
-    display: flex;           /* включает Flexbox */
-    align-items: center;     /* вертикальное выравнивание по центру */
-    gap: 15px;               /* отступ между аватаром и текстом */
-    font-size: 16px;         /* базовый размер шрифта (можно изменить) */
+  display: flex;           /* включает Flexbox */
+  align-items: center;     /* вертикальное выравнивание по центру */
+  gap: 15px;               /* отступ между аватаром и текстом */
+  font-size: 16px;         /* базовый размер шрифта (можно изменить) */
 }
 
 .avatar {
-    border-radius: 3px;      /* скругление углов */
-    width: 5em;            /* ширина, зависящая от размера шрифта */
-    height: 5em;           /* высота, равная ширине (квадрат) */
-    object-fit: cover;       /* чтобы изображение не искажалось */
+  border-radius: 3px;      /* скругление углов */
+  width: 5em;            /* ширина, зависящая от размера шрифта */
+  height: 5em;           /* высота, равная ширине (квадрат) */
+  object-fit: cover;       /* чтобы изображение не искажалось */
 }
 
 .heading-text h1 {
-    margin: 0;               /* убираем лишние отступы */
-    font-size: 1.8rem;       /* пример размера заголовка */
-    line-height: 1.2;
+  margin: 0;               /* убираем лишние отступы */
+  font-size: 1.8rem;       /* пример размера заголовка */
+  line-height: 1.2;
 }
 
 .heading-text p {
-    margin: 5px 0 0;         /* небольшой отступ сверху */
-    font-size: 1rem;
+  margin: 5px 0 0;         /* небольшой отступ сверху */
+  font-size: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  width: 130px;  
+  z-index: 1;
+  overscroll-behavior: contain;
+}
+.sidenav2 {
+  width: auto;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+.sidenav2 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+.sidenav2 a:hover {
+  color: #064579;
+}
+.side_buttons {
+  /* display: block; */
+  margin-top: 12px; 
+  height: 45vh;
+  overflow: scroll;
+  overscroll-behavior: contain;
+  scrollbar-width: thin; 
+  display: grid;
+  justify-items: center;
 }
