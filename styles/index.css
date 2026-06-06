@@ -52,17 +52,19 @@ footer a img {
   color: #1E90FF;
   text-decoration: none;
 }
-.heading {
+.about_content {
   display: flex;           /* включает Flexbox */
-  align-items: center;     /* вертикальное выравнивание по центру */
-  gap: 15px;               /* отступ между аватаром и текстом */
+  /* align-items: center;     вертикальное выравнивание по центру */
+  /* gap: 15px;               отступ между аватаром и текстом */
   font-size: 16px;         /* базовый размер шрифта (можно изменить) */
 }
 
 .avatar {
-  border-radius: 3px;      /* скругление углов */
-  width: 5em;            /* ширина, зависящая от размера шрифта */
-  height: 5em;           /* высота, равная ширине (квадрат) */
+  border-radius: 0%;      /* скругление углов */
+  width: 6em;            /* ширина, зависящая от размера шрифта */
+  height: 6em;           /* высота, равная ширине (квадрат) */
+  padding: 1em;
+  padding-top: 0px;
   object-fit: cover;       /* чтобы изображение не искажалось */
 }
 
