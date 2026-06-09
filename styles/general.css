@@ -48,6 +48,10 @@ body {
   color: #064579;
 }
 
+.link {
+  color: #A8E6FF;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
