@@ -47,9 +47,7 @@ footer a img {
   gap: 20px;           /* расстояние между элементами */
   padding-top: 25px;
 }
-
 .cool_links li a {
-  color: #1E90FF;
   text-decoration: none;
 }
 .about_content {

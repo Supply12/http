@@ -14,7 +14,7 @@ body {
   margin-right: 10%;
   margin-bottom: 0px;
   padding: 0px;
-  cursor: url('../assets/cursor.ico'), auto;
+  /* cursor: url('../assets/cursor.ico'), auto; */
 }
 
 * {
@@ -46,6 +46,10 @@ body {
 
 .sidenav a:hover {
   color: #064579;
+}
+
+.link {
+  color: #A8E6FF;
 }
 
 @keyframes gradient {
