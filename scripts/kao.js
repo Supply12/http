@@ -40,3 +40,8 @@ function countdown() {
     updateDisplay();
     timer = setInterval(updateDisplay, 1000);
 }
+
+function close_kao() {
+    const window = document.getElementById("kao");
+    window.style.display = 'none';
+}
