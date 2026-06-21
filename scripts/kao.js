@@ -1,5 +1,5 @@
 function countdown() {
-    const countDownDate = new Date("Sep 1, 2026 00:00:00").getTime();
+    const countDownDate = new Date("Sep 30, 2026 00:00:00").getTime();
     const locale = "en";
     const unitFormatters = {
         day: new Intl.NumberFormat(locale, { style: "unit", unit: "day", unitDisplay: "narrow" }),
