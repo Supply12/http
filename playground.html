@@ -9,6 +9,14 @@
       href="https://unpkg.com/98.css"
     >
     <script src="scripts/kao.js"></script>
+    <script type="module">
+        import { rainbowCursor } from "./scripts/esm.js";
+        new rainbowCursor({
+            length: 50,
+            colors: ["white", "blue", "red"],
+            size: 4,
+        });
+    </script>
 </head>
 <body onload="countdown();">
     This page is where i will drop everything i like but not suits main pages
