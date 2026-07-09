@@ -1,10 +1,10 @@
 .container {
-  margin-bottom: 20vh;
-  height: fit-content;
+  height: fit-content + 4em;
 }
 
 body {
   min-height: 100%;
+  height: max-content;
   padding-bottom: 6em; /* высота футера + желаемое расстояние */
 }
 
