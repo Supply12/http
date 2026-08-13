@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('../assets/3270NerdFont-Regular.ttf') format('truetype');
+  font-family: 'MyFont';
+  src: url('../assets/3270NerdFont-Regular.ttf') format('truetype');
 }
 body {
   font-family: 'MyFont';
